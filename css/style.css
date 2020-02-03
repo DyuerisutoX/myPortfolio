@@ -1,0 +1,111 @@
+body{
+  position: relative;
+}
+
+#profil {
+    background-color: powderblue;
+    height: 504px;
+    margin-top: 80px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+#prof {
+  border: solid black 1px;
+  margin-top: 35px; 
+}
+
+#coord {
+  height: 333px
+}
+
+#intro {
+  text-align: justify;
+  height: 333px
+}
+
+#hr_profil{
+  border: 0;
+  border: 2px dashed #007bff;
+  width: 200px;
+  display: inline-block;
+}
+
+.control {
+  width: 90px;
+  height: 30px;
+  display: inline-block;
+}
+
+#photo{
+  margin-top: 35px;
+}
+
+#losange, #losange div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+#losange {
+  transform: rotate(45deg) translateY(10px);
+  margin-top: 60px;
+}
+
+#losange #los1 {
+  width: 355px;
+  height: 355px;
+  transform: rotate(-45deg) translateY(-74px);
+}
+
+#losange #los1 img {
+  width: 100%;
+  height: auto;
+}
+
+#tCard{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#simpl{
+  border: solid 1px black;
+}
+
+#hr_section{
+  border: 1px solid #007bff;
+  width: 550px;
+
+}
+
+.fa-html5{
+  color: orangered;
+}
+
+.fa-css3-alt{
+  color: #2E6FF2;
+}
+
+.fa-js{
+  color: #F2D027;
+}
+
+.fa-php{
+  color: #698EBF;
+}
+
+.fa-bootstrap{
+  color: #683FBF;
+}
+
+#contact{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+}

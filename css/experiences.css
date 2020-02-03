@@ -1,0 +1,86 @@
+.blockquote-box.blockquote-primary .square {
+    background-color: #428bca;
+    color: #FFF;
+}
+.blockquote-box .square {
+    width: 120px;
+    min-height: 50px;
+    margin-right: 22px;
+    text-align: center !important;
+    background-color: #E6E6E6;
+    padding: 20px 0;
+    font-size: 15px;
+}
+.blockquote-box {
+    border-left: 5px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 25px;
+}
+.blockquote-box.blockquote-primary {
+    border-color: #428bca;
+}
+.blockquote-box.blockquote-warning .square {
+    background-color: #f0ad4e;
+    color: #FFF;
+}
+.blockquote-box .square {
+    width: 120px;
+    min-height: 50px;
+    margin-right: 22px;
+    text-align: center !important;
+    background-color: #E6E6E6;
+    padding: 20px 0;
+    font-size: 15px;
+}
+.blockquote-box.blockquote-warning {
+    border-color: #f0ad4e;
+}
+.blockquote-box.blockquote-success .square {
+    background-color: #449d44;
+    color: #FFF;
+}
+.blockquote-box .square {
+    width: 120px;
+    min-height: 50px;
+    margin-right: 22px;
+    text-align: center !important;
+    background-color: #E6E6E6;
+    padding: 20px 0;
+    font-size: 15px;
+}
+.blockquote-box.blockquote-success {
+    border-color: #449d44;
+}
+.blockquote-box.blockquote-danger {
+    border-color: #d9534f;
+}
+.blockquote-box {
+    border-left: 5px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 25px;
+}
+.blockquote-box.blockquote-danger .square {
+    background-color: #d9534f;
+    color: #FFF;
+}
+
+.progress .progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 800;
+    padding: 3px 30px 2px 10px;
+    color: white;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+.progress {
+    position: relative;
+    height: 25px !important;
+}
+
+.box-p{
+    padding:5px;
+}

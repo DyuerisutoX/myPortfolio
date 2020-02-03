@@ -1,0 +1,105 @@
+.box18{
+    overflow:hidden;
+}
+
+/*********************** Demo - 18 *******************/
+.box18{
+    background:#3c3c3c;
+    position:relative;
+    -webkit-transition:all .35s ease;
+    transition:all .35s ease;
+}
+
+.box18:after,.box18:before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#3c3c3c;border-left:3px solid #fff;
+    border-right:3px solid #fff;opacity:.9;
+    z-index:1;
+    -webkit-transition:all .35s ease;transition:all .35s ease;
+}
+
+.box18 img,.box19 img{
+    height:auto;
+    width:100%;
+}
+.box18:before{
+    -webkit-transform:skew(45deg) translateX(-155%);transform:skew(45deg) translateX(-155%);
+}
+
+.box18:hover:before{
+    -webkit-transform:skew(45deg) translateX(-55%);
+    transform:skew(45deg) translateX(-55%);
+}
+
+.box18:after{
+    -webkit-transform:skew(45deg) translateX(155%);
+    transform:skew(45deg) translateX(155%);
+}
+
+.box18:hover:after{
+    -webkit-transform:skew(45deg) translateX(55%);
+    transform:skew(45deg) translateX(55%);
+}
+
+.box18 img{
+    -webkit-transition:all .35s ease;transition:all .35s ease;
+}
+
+.box18:hover img{
+    opacity:.5;
+}
+
+.box18 .box-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-box-shadow:0 0 10px #3c3c3c;
+    box-shadow:0 0 10px #3c3c3c;
+    opacity:0;
+    z-index:2;
+    -webkit-transform:translate(-50%,-50%) scale(.5);
+    transform:translate(-50%,-50%) scale(.5);
+    -webkit-transition:all .35s ease;transition:all .35s ease;
+}
+
+.box19,.box20,.box21{
+    box-shadow:0 0 5px #a3a3a3
+}
+
+.box18:hover .box-content{
+    -webkit-transform:translate(-50%,-50%) scale(1);
+    transform:translate(-50%,-50%) scale(1);opacity:1;
+}
+
+.box18 .post,.box18 .title{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    background:#3c3c3c;
+    border:2px solid #fff;color:#fff;
+    padding:15px 20px;margin:0;
+}
+
+.box18 .post,.box19 .title,.box20 .post,.box20 .title{
+    text-transform:capitalize;
+}
+
+.box18 .post{
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    padding:5px 10px;
+    margin-top:15px;
+}
+
+@media only screen and (max-width:990px){
+    .box18{
+        margin-bottom:30px;
+    }
+}
