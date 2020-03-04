@@ -32,6 +32,38 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       
     <title>Nicolas LS - Portfolio</title>
+
+    <style class="cp-pen-styles">
+      #carousel3d .carousel-3d-slide {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          text-align: center;
+          background-color: #fff;
+          padding: 10px;
+          -webkit-transition: all .4s;
+          transition: all .4s;
+        }
+        #carousel3d .carousel-3d-slide.current {
+          background-color: #333;
+          color: #fff;
+        }
+        #carousel3d .carousel-3d-slide.current span {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        </style>
+
   </head>
 
   <body data-spy="scroll" data-target="#naScr" data-offset="50">
@@ -161,6 +193,19 @@
 
                   <div class="timeline">
                     <a class="timeline-content">
+                      <span class="year">2020</span>
+                        <div class="inner-content">
+                          <h3 class="title">AFPAR</h3>
+                          <p class="description">
+                            <strong>2019 – En cours :</strong><br> 
+                            <em>Digital Codeur</em><br>
+                          </p>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div class="timeline">
+                    <a class="timeline-content">
                     <span class="year">2019</span>
                       <div class="inner-content">
                         <h3 class="title">SIMPLON Réunion</h3>
@@ -222,71 +267,56 @@
 
           <!-- Bootsnipp Card -->
           <div class="container">
-            <div class="row">
-
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img class="card-img-top" src="img/vis_sl_html.PNG" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">HTML</h5>
-                    <p class="card-text">Certificat obtenue après avoir complété le parcours "HTML Fundamentals" de Solo Learn</p>
-                    <a href="doc/solo_html.pdf" class="btn btn-outline-dark btn-sm" target="_blank">Voir PDF</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img class="card-img-top" src="img/vis_sl_css.PNG" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">CSS</h5>
-                    <p class="card-text">Certificat obtenue après avoir complété le parcours "CSS Fundamentals" de Solo Learn</p>
-                    <a href="doc/solo_css.pdf" class="btn btn-outline-dark btn-sm" target="_blank">Voir PDF</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img class="card-img-top" src="img/vis_sl_js.PNG" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">Certificat obtenue après avoir complété le parcours "JavaScript Tutorials" de Solo Learn</p>
-                    <a href="doc/solo_js.pdf" class="btn btn-outline-dark btn-sm" target="_blank">Voir PDF</a>
-                  </div>
-                </div>
-              </div>
-
+            <div id="carousel3d">
+              <carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" 
+              :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
+      
+                <slide :index="0">
+                  <img src="img/vis_sl_html.PNG" alt="Card image cap">
+                 <a href="doc/solo_html.pdf" target="_blank">Click Here</a>
+                </slide>
+      
+                    <slide :index="1">
+                      <img src="img/vis_sl_css.PNG" alt="Card image cap">
+                      <a href="doc/solo_css.pdf" target="_blank">Click Here</a>
+                  </slide>
+                  
+                    <slide :index="2">
+                      <img class="card-img-top" src="img/vis_sl_js.PNG" alt="Card image cap">
+                      <a href="doc/solo_js.pdf" target="_blank">Click Here</a>          
+                  </slide>
+      
+                    <slide :index="3">
+                      <img class="card-img-top" src="img/op_hc.PNG" alt="Card image cap">
+                      <a href="doc/8119371815.pdf" target="_blank">Click Here</a>
+                  </slide>
+      
+                    <slide :index="4">
+                      <img class="card-img-top" src="img/op_js.PNG" alt="Card image cap">
+                      <a href="doc/4933926440.pdf" target="_blank">Click Here</a>          
+                      </slide>
+ 
+                      <slide :index="5">
+                        <img class="card-img-top" src="img/op_wp.PNG" alt="Card image cap">
+                        <a href="doc/6658468017.pdf" target="_blank">Click Here</a>          
+                        </slide>
+                    
+                    
+              </carousel-3d>
             </div>
-          </div>
-
-          <div class="container">
-            <div class="row">
-
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img class="card-img-top" src="img/op_hc.PNG" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">HTML/CSS</h5>
-                    <p class="card-text">Certificat obtenue après avoir complété entièrement le cours " Apprenez à créer votre site web avec HTML5 et CSS3" de Openclassroom</p>
-                    <a href="doc/4933926440.pdf" class="btn btn-outline-dark btn-sm" target="_blank">Voir PDF</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card mb-4">
-                  <img class="card-img-top" src="img/op_js.PNG" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">Certificat obtenue après avoir complété entièrement le cours " Apprenez à coder avec JavaScript" de Openclassroom</p>
-                    <a href="doc/8119371815.pdf" class="btn btn-outline-dark btn-sm" target="_blank">Voir PDF</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
+            <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script><script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
+            <script >new Vue({
+              el: '#carousel3d',
+              data: {
+                slides: 7
+              },
+              components: {
+                'carousel-3d': Carousel3d.Carousel3d,
+                'slide': Carousel3d.Slide
+              }
+            })
+            //# sourceURL=pen.js
+            </script>
         </div>
 
       </section>
