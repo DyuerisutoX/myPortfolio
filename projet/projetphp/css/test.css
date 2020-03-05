@@ -1,0 +1,92 @@
+header{
+    background-color: #2ecc71;
+    width: 100%;
+    display: inline-flex;
+}
+
+body{
+    display: -ms-inline-flexbox;
+}
+
+.logo{
+    height: 100px;
+}
+
+.present{
+    text-align: center;
+    color: #ffffff;
+}
+
+nav{
+    text-align: center;
+}
+
+
+.second{
+    margin-top: 75px;
+    margin-left: 650px;
+}
+
+.liseré{
+    width: 10%;
+    background-color:#a309a3;
+}
+
+.login{
+    border: black solid 1px;
+    height: 180px;
+}
+
+img.displayed{
+    display: block;
+    margin-left: auto;
+    margin-right: 600px;
+    margin-top: 50px;
+    width: 35%;
+    height: 35%;
+}
+
+#corps{
+    margin-left: 50px;
+    /*border: black solid 1px;*/
+}
+
+body{
+    margin: 0;
+}
+
+.box{
+    min-height: 100vh; /* toute la hauteur du viewport */
+	min-height: 50vh;    /* à supprimer quand il y aura du contenu */
+	display: flex; /* crée un contexte flex pour ses enfants */
+}
+
+main {
+	display: flex; /* crée un contexte flex pour ses enfants */
+	flex-direction: row; /* il suffit de mettre column pour avoir nav horizontal */
+	flex: 1 1 auto; /* occupe la hauteur restante */
+}
+
+.conteneur{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+
+}
+
+.zone:nth-child(1){
+    padding-right: 25px;
+}
+
+.zone:nth-child(1) p {
+    padding-left: 25px;
+}
+
+.zone:nth-child(3){
+    padding-left: 25px;
+}
+
+hr{
+    background-color:black;
+}
