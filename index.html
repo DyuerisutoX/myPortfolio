@@ -335,20 +335,16 @@
               <div class="col-md-6" id="boite">
                 <div class="blockquote-box blockquote-primary clearfix" style="display: block;">
                   <div class="square pull-left">
-                    <i class="fa fa-calendar"></i> Dec. 2017 - Mai 2018
+                    <i class="fa fa-calendar"></i> Fev. 2020 - Mars. 2020
                   </div>
-                  <h2>Service Civique, Mission: Créer du lien entre les générations</h2>
+                  <h2>Stage Direction de la Réussite Educative</h2>
                   <p class="text-justify box-p">
-                    <em>Mission de 6 mois effectuée à la Médiathèque Auguste Lacaussade, section Cyber Espace en tant que Animateur NTIC :</em>
+                    <em>Stage de 4 semaines effectuer dans le cadre de notre formation "Digital Codeur" à la DRE</em>
 
                     <ul>
-
-                      <li>Accueillir les personnes</li>
-                      <li>Inscription au Cyber-Espace</li>
-                      <li>Assistance au public<br>
-                        (Aide dans l’utilisation de logiciels, à effectuer les démarches sur internet, résoudre les problèmes d’impressions)</li>
-
+                      <li>Réalisation d'un site WordPress pour la mairie de Saint-André</li>
                     </ul>
+
                   </p>
                 </div>
               </div>
@@ -366,6 +362,27 @@
                       <li>Découverte éducative aux jeunes de l'informatique et de la programmation</li>
                     </ul>
 
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6" id="boite">
+                <div class="blockquote-box blockquote-warning clearfix" style="display: block;">
+                  <div class="square pull-left">
+                    <i class="fa fa-calendar"></i> Dec. 2017 - Mai 2018
+                  </div>
+                  <h2>Service Civique, Mission: Créer du lien entre les générations</h2>
+                  <p class="text-justify box-p">
+                    <em>Mission de 6 mois effectuée à la Médiathèque Auguste Lacaussade, section Cyber Espace en tant que Animateur NTIC :</em>
+
+                    <ul>
+
+                      <li>Accueillir les personnes</li>
+                      <li>Inscription au Cyber-Espace</li>
+                      <li>Assistance au public<br>
+                        (Aide dans l’utilisation de logiciels, à effectuer les démarches sur internet, résoudre les problèmes d’impressions)</li>
+
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -413,6 +430,11 @@
               <div class="progress mt-2">
                 <div class="progress-bar progress-bar-striped bg-success progress-bar-animated bootstrap"></div>
               </div>
+
+              <h3><i class="fab fa-wordpress"></i></i> Wordpress</h3>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated wordpress"></div>
+              </div>
                       
               <input type="button" class="btn btn-primary mt-2" id="animer" value="Animer">
               
@@ -458,6 +480,28 @@
                     <h5 class="card-title">Java Script</h5>
                     <p class="card-text">Exercice final du cours "Apprenez à coder avec JavaScript" de Openclassroom</p>
                     <a href="projet/Op_js/html/contacts.html" class="btn btn-outline-dark btn-sm" target="_blank">Check This</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="card-img-top" src="img/visuelPgm.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Java Script</h5>
+                    <p class="card-text">Exercice de programmation JavaScript</p>
+                    <a href="projet/pgm02/PGM02_v3.html" class="btn btn-outline-dark btn-sm" target="_blank">Check This</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="card-img-top" src="img/visuelPhp.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">PHP</h5>
+                    <p class="card-text">Exercice de programmation PHP</p>
+                    <a href="projet/projetphp/index.php" class="btn btn-outline-dark btn-sm" target="_blank">Check This</a>
                   </div>
                 </div>
               </div>
@@ -640,6 +684,17 @@
         }, 50);
     }
   }
+
+  function timer6(r) {
+    
+    var value6 = r + "%";
+    $(".wordpress").css("width", value6).text(value6)
+    if(r < 45) {
+        setTimeout(function() {
+        timer6(r + 5);
+        }, 50);
+    }
+  }
       
       $(function (){
       $("#animer").click(function() {
@@ -648,6 +703,7 @@
       timer3(0,0);
       timer4(0,0);
       timer5(0,0);
+      timer6(0,0);
       });
       });
   </script>
