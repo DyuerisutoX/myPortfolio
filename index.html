@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <!-- CSS Bootsnipp -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/certificats.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/parcours.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/experiences.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/loisirs.css">
@@ -269,56 +270,30 @@
 
           <!-- Bootsnipp Card -->
           <div class="container">
-            <div id="carousel3d">
-              <carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'❬'" :controls-next-html="'❭'" :controls-width="30" 
-              :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
-      
-                <slide :index="0">
-                  <img src="img/vis_sl_html.PNG" alt="Card image cap">
-                 <a href="doc/solo_html.pdf" target="_blank">Click Here</a>
-                </slide>
-      
-                    <slide :index="1">
-                      <img src="img/vis_sl_css.PNG" alt="Card image cap">
-                      <a href="doc/solo_css.pdf" target="_blank">Click Here</a>
-                  </slide>
-                  
-                    <slide :index="2">
-                      <img class="card-img-top" src="img/vis_sl_js.PNG" alt="Card image cap">
-                      <a href="doc/solo_js.pdf" target="_blank">Click Here</a>          
-                  </slide>
-      
-                    <slide :index="3">
-                      <img class="card-img-top" src="img/op_hc.PNG" alt="Card image cap">
-                      <a href="doc/8119371815.pdf" target="_blank">Click Here</a>
-                  </slide>
-      
-                    <slide :index="4">
-                      <img class="card-img-top" src="img/op_js.PNG" alt="Card image cap">
-                      <a href="doc/4933926440.pdf" target="_blank">Click Here</a>          
-                      </slide>
- 
-                      <slide :index="5">
-                        <img class="card-img-top" src="img/op_wp.PNG" alt="Card image cap">
-                        <a href="doc/6658468017.pdf" target="_blank">Click Here</a>          
-                        </slide>
+
+            <div class="contenu-carrousel">
+              <div class="carrousel">
                 
-              </carousel-3d>           
+                <a href="doc/solo_html.pdf" target="_blank"><div id="certif_one"></div></a>
+                <a href="doc/solo_css.pdf" target="_blank"><div id="certif_two"></div></a>
+                <a href="doc/solo_js.pdf" target="_blank"><div id="certif_three"></div></a>
+                <a href="doc/8119371815.pdf" target="_blank"><div id="certif_four"></div></a>
+                <a href="doc/4933926440.pdf" target="_blank"><div id="certif_five"></div></a>
+                <a href="doc/6658468017.pdf" target="_blank"><div id="certif_six"></div></a>
+
+              </div>
             </div>
-            <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script><script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
-            <script >new Vue({
-              el: '#carousel3d',
-              data: {
-                slides: 7
-              },
-              components: {
-                'carousel-3d': Carousel3d.Carousel3d,
-                'slide': Carousel3d.Slide
-              }
-            })
-            //# sourceURL=pen.js
-            </script>
+            
+            <div class=controle>
+              <button onclick="carrousel('-')">❮</button>
+              <button onclick="carrousel('')">❯</button>
+            </div>
+            
+
+
+          </div>
         </div>
+        
 
       </section>
 
@@ -514,7 +489,7 @@
                   <div class="card-body">
                     <h5 class="card-title">API</h5>
                     <p class="card-text">App météo</p>
-                    <a href="projet/App météoV2/" class="btn btn-outline-dark btn-sm" target="_blank">Check This</a>
+                    <a href="projet/App météoV2/test3.html" class="btn btn-outline-dark btn-sm" target="_blank">Check This</a>
                   </div>
                 </div>
               </div>
@@ -632,93 +607,5 @@
 
   </body>
 
-  <script>
-
-    //Carousel
-  $('.carousel').carousel({
-      interval: false
-  });
-  
-  </script>
-  
-  <script>
-    //Progress-bar
-    function timer(n) {
-    
-      var value = n + "%";
-      $(".html").css("width", value).text(value)
-      if(n < 80) {
-          setTimeout(function() {
-          timer(n + 5);
-          }, 50);
-      }
-    }
-  
-    function timer2(m) {
-    
-    var value2 = m + "%";
-    $(".css").css("width", value2).text(value2)
-    if(m < 75) {
-        setTimeout(function() {
-        timer2(m + 5);
-        }, 50);
-    }
-  }
-  
-  function timer3(o) {
-    
-    var value3 = o + "%";
-    $(".js").css("width", value3).text(value3)
-    if(o < 40) {
-        setTimeout(function() {
-        timer3(o + 5);
-        }, 50);
-    }
-  }
-  
-  function timer4(p) {
-    
-    var value4 = p + "%";
-    $(".php").css("width", value4).text(value4)
-    if(p < 35) {
-        setTimeout(function() {
-        timer4(p + 5);
-        }, 50);
-    }
-  }
-  
-  function timer5(q) {
-    
-    var value5 = q + "%";
-    $(".bootstrap").css("width", value5).text(value5)
-    if(q < 50) {
-        setTimeout(function() {
-        timer5(q + 5);
-        }, 50);
-    }
-  }
-
-  function timer6(r) {
-    
-    var value6 = r + "%";
-    $(".wordpress").css("width", value6).text(value6)
-    if(r < 35) {
-        setTimeout(function() {
-        timer6(r + 5);
-        }, 50);
-    }
-  }
-      
-      $(function (){
-      $("#animer").click(function() {
-      timer(0,0);
-      timer2(0,0);
-      timer3(0,0);
-      timer4(0,0);
-      timer5(0,0);
-      timer6(0,0);
-      });
-      });
-  </script>
-  
+  <script src="js/main.js"></script>	
 </html>
